@@ -1,0 +1,26 @@
+{
+  "name": "aitm-node-types",
+  "version": "0.0.1",
+  "description": "Type definitions for node applications throughout the Ai-Trademark project.",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-trademark/node-types.git"
+  },
+  "contributors": [
+    {
+      "name": "Kwong Tung Nan",
+      "url": "https://github.com/kwongtn",
+      "githubUsername": "kwongtn"
+    }
+  ],
+  "author": "KwongTN <tungnan5636@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ai-trademark/node-types/issues"
+  },
+  "homepage": "https://github.com/ai-trademark/node-types#readme"
+}
