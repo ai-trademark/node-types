@@ -1,5 +1,14 @@
+/**
+ * Should not exist on own:
+ * @see MiddlewareResponseSuccess, MiddlewareResponseFailed
+ */
+interface MiddlewareResponse {
+  success: boolean;
+  responseTime: number;
+}
+
 declare namespace PhoneticComparison {
-  interface Response {
+  interface ServerResponse {
     filename1: string;
     filename2: string;
     filename1_3d?: string;
@@ -15,6 +24,16 @@ declare namespace PhoneticComparison {
       nnInferenceTime: number;
       inferenceTime: number;
     };
+  }
+
+  interface MiddlewareResponseSuccess extends MiddlewareResponse {
+    success: true;
+    results: ServerResponse;
+  }
+
+  interface MiddlewareResponseFailed extends MiddlewareResponse {
+    success: false;
+    debug?: string;
   }
 }
 

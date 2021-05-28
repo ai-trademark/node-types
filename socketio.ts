@@ -21,7 +21,7 @@ declare namespace s {
      * Emits result found at current stage.
      * Cached results use this implementation too.
      */
-    results: (val: Array<PhoneticComparison.Response>) => void;
+    results: (val: Array<PhoneticComparison.ServerResponse>) => void;
 
     /**
      * Updates the frontend on current search status.
