@@ -23,6 +23,7 @@ export interface Env {
     IP: string;
     URI: string;
     OPTIONS: MongoClientOptions;
+    URI_OPTIONS: string;
   };
 
   MONGO_TARGETS: {
