@@ -10,6 +10,15 @@ declare namespace TmSearch {
     elapsedTime: number;
   }
 
+  // TODO: Make it have more sense, e.g. review this declaration
+  interface PagedResponse {
+    results: Array<{
+      ST13: string;
+      tmName: string;
+    }>;
+    resultCount: number;
+  }
+
   namespace DbRes {
     /**
      * Data that will be displayed to users.
