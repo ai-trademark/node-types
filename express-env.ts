@@ -48,6 +48,10 @@ export interface Env {
     DEFAULT_PAGE_SIZE: number;
   };
 
+  PHONETIC: {
+    AB_ALL_CONCURRENT: number;
+  };
+
   BACKEND_API: {
     GENERIC_AI: URL;
     PHONETIC_COMPARISON: URL;
