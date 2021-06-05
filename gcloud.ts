@@ -17,4 +17,4 @@ declare namespace gcloud {
   }
 }
 
-export = gcloud;
+export { gcloud };

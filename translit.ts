@@ -17,4 +17,4 @@ declare namespace Transliterate {
   }
 }
 
-export = Transliterate;
+export { Transliterate };

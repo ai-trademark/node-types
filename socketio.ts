@@ -1,6 +1,6 @@
-import PhoneticComparison = require("./phonetic");
+import { PhoneticComparison } from "./phonetic";
 
-declare namespace s {
+declare namespace SocketTypes {
   type WsCompareStates =
     | { mode: "error"; msg?: string }
     | { mode: "jobQueued" }
@@ -57,4 +57,4 @@ declare namespace s {
   }
 }
 
-export = s;
+export { SocketTypes };

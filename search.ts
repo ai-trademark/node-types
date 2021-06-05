@@ -1,4 +1,4 @@
-import * as TmEnums from "./tm.enums";
+import { TmEnums } from "./tm.enums";
 
 declare namespace TmSearch {
   namespace Request {}
@@ -65,4 +65,4 @@ declare namespace TmSearch {
   }
 }
 
-export = TmSearch;
+export { TmSearch };

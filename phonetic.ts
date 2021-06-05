@@ -37,4 +37,4 @@ declare namespace PhoneticComparison {
   }
 }
 
-export = PhoneticComparison;
+export { PhoneticComparison };

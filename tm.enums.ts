@@ -110,4 +110,4 @@ declare namespace TmEnums {
     | "Word";
 }
 
-export = TmEnums;
+export { TmEnums };
