@@ -17,6 +17,10 @@ export interface Env {
     PORT: number;
   };
 
+  SOCKET_IO: {
+    PORT: number;
+  };
+
   MONGO_DB_CREDS: {
     USER: string;
     PASS: string;
