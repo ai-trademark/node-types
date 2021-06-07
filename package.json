@@ -23,10 +23,8 @@
     "url": "https://github.com/ai-trademark/node-types/issues"
   },
   "homepage": "https://github.com/ai-trademark/node-types#readme",
-  "devDependencies": {
-    "@types/node": "^15.12.1"
-  },
   "dependencies": {
+    "@types/node": "^15.12.1",
     "@types/mongodb": "^3.6.17"
   }
 }
