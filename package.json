@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/ai-trademark/node-types#readme",
   "devDependencies": {
-    "@types/node": "^15.6.1"
+    "@types/node": "^15.12.1"
   },
   "dependencies": {
     "@types/mongodb": "^3.6.17"
