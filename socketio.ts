@@ -6,7 +6,7 @@ declare namespace SocketTypes {
     | { mode: "jobQueued" }
     | { mode: "querydb" }
     | { mode: "startCompare"; totalResults: number }
-    | { mode: "await"; tmName: string }
+    | { mode: "await"; tmName: string } // Not used
     | { mode: "errorCompare"; msg?: string }
     | { mode: "doneCompare" };
 
@@ -52,9 +52,19 @@ declare namespace SocketTypes {
     ping: (val: any) => void;
     /**
      * Triggers the start of ab-all comparison
+     * String will then be parsed to fulfil data structure
+     * as defined in interface ClientReq.
      */
-    compare: (sourceString: string) => void;
+    compare: (request: string) => void;
+
+    /**
+     * Trigger to stop comparing, happens when
+     * client closes window or submits new request.
+     */
+    stop: () => void;
   }
 }
 
-export { SocketTypes };
+type PhoneticResult = PhoneticComparison.ServerResponse;
+
+export { SocketTypes, PhoneticResult };
