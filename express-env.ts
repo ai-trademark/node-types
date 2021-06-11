@@ -8,7 +8,6 @@ interface ExternalServer {
 export interface Env {
   TESTING_MODE: boolean;
   AB_CONCURRENT: number;
-  DB_ALL_KEY: string;
 
   /**
    * Describes parameters for the current server
