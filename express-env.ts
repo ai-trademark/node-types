@@ -1,4 +1,4 @@
-import { MongoClientOptions } from "mongodb";
+import { MongoClientOptions } from 'mongodb';
 
 interface ExternalServer {
   hostname: string;
@@ -50,6 +50,10 @@ export interface Env {
 
   SEARCH: {
     DEFAULT_PAGE_SIZE: number;
+    CACHE: {
+      TIMEOUT: number;
+      SCAN_INTERVAL: number;
+    };
   };
 
   PHONETIC: {
