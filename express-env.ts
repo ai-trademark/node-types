@@ -60,9 +60,9 @@ export interface Env {
   };
 
   BACKEND_API: {
-    GENERIC_AI: URL;
-    PHONETIC_COMPARISON: URL;
-    IMG_SEARCH: URL;
-    TRANSLITERATE: URL;
+    GENERIC_AI: string;
+    PHONETIC_COMPARISON: string;
+    IMG_SEARCH: string;
+    TRANSLITERATE: string;
   };
 }
