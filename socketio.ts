@@ -1,14 +1,15 @@
-import { PhoneticComparison } from "./phonetic";
+import { PhoneticComparison } from './phonetic';
 
 declare namespace SocketTypes {
   type WsCompareStates =
-    | { mode: "error"; msg?: string }
-    | { mode: "jobQueued" }
-    | { mode: "querydb" }
-    | { mode: "startCompare"; totalResults: number }
-    | { mode: "await"; tmName: string } // Not used
-    | { mode: "errorCompare"; msg?: string }
-    | { mode: "doneCompare" };
+    | { mode: 'error'; msg?: string }
+    | { mode: 'jobQueued' }
+    | { mode: 'querydb' }
+    | { mode: 'startCompare'; totalResults: number }
+    | { mode: 'await'; tmName: string } // Not used
+    | { mode: 'errorCompare'; msg?: string }
+    | { mode: 'concurrent'; num: number }
+    | { mode: 'doneCompare' };
 
   interface ServerEvents {
     /**
@@ -35,10 +36,10 @@ declare namespace SocketTypes {
    * - sample : Compares with randomly selected sample size.
    */
   type compareMode =
-    | { mode: "all" }
-    | { mode: "sample"; size: number }
-    | { mode: "phoneticSimilar"; threshold: number }
-    | { mode: "headSame"; charCount: number };
+    | { mode: 'all' }
+    | { mode: 'sample'; size: number }
+    | { mode: 'phoneticSimilar'; threshold: number }
+    | { mode: 'headSame'; charCount: number };
 
   /**
    * Client request from frontend
