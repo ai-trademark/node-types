@@ -46,6 +46,9 @@ declare namespace SocketTypes {
     | { mode: 'soundex' }
     | { mode: 'metafone' }
     | { mode: 'doubleMetafone' }
+    | { mode: 'fuzzySoundex' }
+    | { mode: 'fuzzyMetafone' }
+    | { mode: 'fuzzyDoubleMetafone' }
 
     ;
 
