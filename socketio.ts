@@ -38,8 +38,16 @@ declare namespace SocketTypes {
   type compareMode =
     | { mode: 'all' }
     | { mode: 'sample'; size: number }
-    | { mode: 'phoneticSimilar'; threshold: number }
-    | { mode: 'headSame'; charCount: number };
+    | { mode: 'headSame'; charCount: number }
+    /**
+     * Matches using the submine -p match method. Threshold means will only include results >= provided number. 
+     * */
+    | { mode: 'fuzzyMatching', threshold: number }
+    | { mode: 'soundex' }
+    | { mode: 'metafone' }
+    | { mode: 'doubleMetafone' }
+
+    ;
 
   /**
    * Client request from frontend
