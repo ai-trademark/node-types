@@ -1,11 +1,11 @@
 import { TmEnums } from './tm.enums';
 
 declare namespace TmSearch {
-  namespace Request {}
+  namespace Request { }
 
   interface MiddlewareResponse {
     query: string;
-    results: Array<DbRes.TmDetailsUserFacing | DbRes.TmDetailsUserFacing>;
+    results: Array<DbRes.TmIndexUserFacing | DbRes.TmDetailsUserFacing>;
     useCache: boolean;
     elapsedTime: number;
   }
