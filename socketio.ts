@@ -49,6 +49,7 @@ declare namespace SocketTypes {
     | { mode: 'fuzzySoundex' }
     | { mode: 'fuzzyMetafone' }
     | { mode: 'fuzzyDoubleMetafone' }
+    | { mode: 'composite' }
 
     ;
 
