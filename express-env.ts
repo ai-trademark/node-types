@@ -37,6 +37,8 @@ export interface Env {
 
   GCLOUD: {
     VISION_API: {
+      SERV_CRED_PATH: string;
+      PROJ_ID: string;
       KEY: string;
 
       // TODO: Remove once shift to client libraries
