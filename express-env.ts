@@ -57,6 +57,16 @@ export interface Env {
     };
   };
 
+  IMG_SEARCH: {
+    UPLOAD_CACHE: {
+      ENDPOINT: string;
+      PORT: number;
+      BUCKET_NAME: string;
+      ACCESS_KEY: string;
+      SECRET_KEY: string;
+    };
+  };
+
   PHONETIC: {
     AB_ALL_CONCURRENT: number;
   };
