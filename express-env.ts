@@ -47,6 +47,11 @@ export interface Env {
       MODEL: string;
       MAX_RESULTS: number;
     };
+
+    KG: {
+      VERSION: string;
+      API_KEY: string;
+    }
   };
 
   SEARCH: {
