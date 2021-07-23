@@ -70,6 +70,11 @@ export interface Env {
       ACCESS_KEY: string;
       SECRET_KEY: string;
     };
+
+    MATCH_API:{
+      ENDPOINT: string;
+      PORT: number;
+    }
   };
 
   PHONETIC: {
