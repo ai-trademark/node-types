@@ -35,6 +35,13 @@ declare namespace DbRes {
     applicantName: Array<string>;
     applicationDate: string;
     tradeMarkType: TmEnums.TrademarkType;
+    codeRegistrationDate?: string;
+    expiryDate?: string;
+    markCurrentStatusCode?: string;
+    kindMark?: string;
+    markCurrentStatusDate?: string;
+    markFeature?: string;
+    registrationNumber?: string;
   }
 
   /**
@@ -52,6 +59,61 @@ declare namespace DbRes {
     applicationDate: string;
     tradeMarkType: TmEnums.TrademarkType;
   }
+
+  interface TmDetails {
+    ST13: string;
+    appeals: Array<any>;
+    applicants: Array<{
+      addressDetails: {
+        countryCode: string;
+      },
+      fullAddress: string,
+      fullName: string;
+    }>;
+    cancelations: Array<any>;
+    exhibitionPriority: Array<any>;
+    goodsAndServicesList: Array<{
+      goodAndServices: {
+        goodAndServiceList: Array<{
+          niceClass: string;
+          goodsAndServices: Array<{
+            term: string;
+          }>
+        }>
+      },
+      language: string;
+    }>;
+    imageCrawled: boolean;
+    insertionDateTime: string;
+    internationalRegistrationTransformation: Array<any>;
+    officeLastUpdateDate: string;
+    officeLogoUrl: string;
+    officeNumberOfTradeMark: string;
+    officeUrl: string;
+    oppositions: Array<any>;
+    priority: Array<any>;
+    publication: Array<{
+      date: string;
+      section: string;
+    }>;
+    renewals: Array<any>;
+    representatives: Array<{
+      addressDetails: {
+        countryCode: string;
+      },
+      fullAddress: string,
+      fullName: string;
+    }>;
+    seniority: Array<any>;
+    sound: Array<any>;
+    threeDModel: Array<any>;
+    tmOfficeURL: string;
+    tradeMark: TmIndexUserFacing;
+    video: Array<any>;
+    viennaCodes: Array<any>;
+    _id: string;
+  }
+
 
   interface TmIndexRaw extends TmIndexUserFacing {
     _id: Buffer;
