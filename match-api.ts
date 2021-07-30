@@ -30,7 +30,13 @@ interface MatchAPIDeleteRes extends MatchAPIBaseResponse {
 interface SearchResult {
     score: number;
     filepath: string;
-    metadata: any;
+    metadata: {
+        tmName: string;
+        ST13: string;
+        applicationNumber: string;
+        registrationNumber: string;
+        tmOffice: string;
+    };
 }
 
 interface MatchAPISearchRes extends MatchAPIBaseResponse {
@@ -46,4 +52,4 @@ export {
     MatchAPIDeleteRes,
     SearchResult,
     MatchAPISearchRes
-}
+};
