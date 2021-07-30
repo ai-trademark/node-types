@@ -71,11 +71,18 @@ export interface Env {
       SECRET_KEY: string;
     };
 
-    MATCH_API:{
+    MATCH_API: {
       ENDPOINT: string;
       PORT: number;
     }
   };
+
+  ES: {
+    ENDPOINT: string;
+    PORT: number;
+    INDEX: string;
+    FE_URL: string;
+  }
 
   PHONETIC: {
     AB_ALL_CONCURRENT: number;
