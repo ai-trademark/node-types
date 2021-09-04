@@ -33,6 +33,7 @@ export interface Env {
     INDEX: string;
     DETAILS: string;
     DB: string;
+    PHONETIC_INPUT: string;
   };
 
   GCLOUD: {

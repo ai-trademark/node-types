@@ -21,6 +21,14 @@ declare namespace PhoneticComparison {
       inferenceTime: number;
     };
   }
+};
+
+declare namespace PhoneticAddition {
+  interface ServerRequest {
+    str1: string;
+    str2: string;
+    similar: boolean;
+  }
 }
 
-export { PhoneticComparison };
+export { PhoneticComparison, PhoneticAddition };
